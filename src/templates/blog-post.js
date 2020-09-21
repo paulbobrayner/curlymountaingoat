@@ -1,4 +1,5 @@
 import React from "react"
+import styled from "styled-components"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
@@ -19,7 +20,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
+        <Title>{post.frontmatter.title} here</Title>
         <p
           style={{
             ...scale(-1 / 5),
@@ -89,3 +90,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+const Title = styled.h1``

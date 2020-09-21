@@ -115,7 +115,7 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
 
   return (
     <>
-      <SearchBar>
+      {/* <SearchBar>
         <svg
           focusable="false"
           xmlns="http://www.w3.org/2000/svg"
@@ -135,8 +135,9 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
             setQuery(e.target.value)
           }}
         />
-      </SearchBar>
-      {query ? <SearchedPosts results={results} /> : <AllPosts posts={posts} />}
+      </SearchBar> */}
+      {/* {query ? <SearchedPosts results={results} /> : <AllPosts posts={posts} />} */}
+      <AllPosts posts={posts} />
     </>
   )
 }

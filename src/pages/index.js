@@ -5,12 +5,11 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SearchPosts from "../components/searchPosts"
-import mailchimp from "@mailchimp/mailchimp_marketing"
+import SignUp from "../components/signup"
 
 class Blog extends React.Component {
   render() {
     const { data, navigate, location } = this.props
-    console.log("DATAA", this.props)
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMdx.edges
     const localSearchBlog = data.localSearchBlog
@@ -19,7 +18,7 @@ class Blog extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
-        {/* Email capture goes here */}
+        <SignUp />
         <SearchPosts
           posts={posts}
           localSearchBlog={localSearchBlog}
@@ -30,18 +29,6 @@ class Blog extends React.Component {
     )
   }
 }
-
-mailchimp.setConfig({
-  apiKey: "835bc288c33e58c58eea54b793d9ea75-us2",
-  server: "us2",
-})
-
-async function run() {
-  const response = await mailchimp.ping.get()
-  console.log(response)
-}
-
-run()
 
 export default Blog
 

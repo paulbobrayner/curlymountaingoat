@@ -60,8 +60,7 @@ const Container = styled.div`
 const BioWrap = styled.div``
 
 const IntroText = styled.div`
-  font-family: "monserrat, sans-serif";
-  // margin-bottom: 4px;
+  font-family: monserrat, sans-serif;
 `
 
 export default Bio

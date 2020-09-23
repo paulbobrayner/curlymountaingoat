@@ -1,6 +1,5 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
 import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
@@ -15,9 +14,16 @@ function Bio() {
           <Container>
             <BioWrap>
               <IntroText>
-                Hi. My name's Paul. I'm currently building an app for health
-                professionals and coaches that will help them to increase client
-                adherance and manage clients remotely.
+                My name's Paul, former PT + Health coach turned software
+                developer.
+              </IntroText>
+              <IntroText>
+                Building an app to help coaches/health pros work remotely +
+                manage client adherance.
+              </IntroText>
+              <IntroText>
+                Blogging all things behaviour change, client adherance,
+                sustainable change + health.
               </IntroText>
             </BioWrap>
           </Container>
@@ -55,7 +61,7 @@ const BioWrap = styled.div``
 
 const IntroText = styled.div`
   font-family: "monserrat, sans-serif";
-  margin-bottom: 20px;
+  // margin-bottom: 4px;
 `
 
 export default Bio

@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <Title>{post.frontmatter.title} here</Title>
+        <Title>{post.frontmatter.title}</Title>
         <p
           style={{
             ...scale(-1 / 5),
@@ -91,4 +91,6 @@ export const pageQuery = graphql`
   }
 `
 
-const Title = styled.h1``
+const Title = styled.h1`
+  font-family: monserrat, sans-serif;
+`

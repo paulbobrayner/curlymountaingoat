@@ -69,7 +69,7 @@ class Layout extends React.Component {
         <Footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <ExternalLink href="https://www.gatsbyjs.org">Gatsby</ExternalLink>
         </Footer>
       </Wrapper>
     )
@@ -82,7 +82,12 @@ const Wrapper = styled.div`
 
 const Footer = styled.footer`
   text-align: center;
+  font-family: monserrat, sans-serif;
   margin: 24px;
+`
+
+const ExternalLink = styled.a`
+  color: #c38d9e;
 `
 
 export default Layout

@@ -5,7 +5,6 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SearchPosts from "../components/searchPosts"
-import SignUp from "../components/signup"
 
 class Blog extends React.Component {
   render() {
@@ -18,7 +17,6 @@ class Blog extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
-        <SignUp />
         <SearchPosts
           posts={posts}
           localSearchBlog={localSearchBlog}

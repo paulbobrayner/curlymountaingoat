@@ -82,17 +82,20 @@ const AllPosts = ({ posts }) => (
       const title = node.frontmatter.title || node.fields.slug
       return (
         <div key={node.fields.slug}>
-          <h3
+          <BlogTitle
             style={{
               marginBottom: rhythm(1 / 4),
             }}
           >
-            <Link style={{ boxShadow: `none` }} to={`/blog${node.fields.slug}`}>
+            <BlogLink
+              style={{ boxShadow: `none` }}
+              to={`/blog${node.fields.slug}`}
+            >
               {title}
-            </Link>
-          </h3>
-          <small>{node.frontmatter.date}</small>
-          <p
+            </BlogLink>
+          </BlogTitle>
+          <Date>{node.frontmatter.date}</Date>
+          <BlogContent
             dangerouslySetInnerHTML={{
               __html: node.frontmatter.description || node.excerpt,
             }}
@@ -141,5 +144,21 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
     </>
   )
 }
+
+const BlogTitle = styled.h3`
+  font-family: monserrat, sans-serif;
+`
+
+const BlogLink = styled(Link)`
+  color: #c38d9e;
+`
+
+const Date = styled.small`
+  font-family: monserrat, sans-serif;
+`
+
+const BlogContent = styled.p`
+  font-family: monserrat, sans-serif;
+`
 
 export default SearchPosts

@@ -14,22 +14,23 @@ function SignUp() {
         novalidate
       >
         <Wrap id="mc_embed_signup_scroll">
-          <input
+          <EmailInput
             type="email"
             name="EMAIL"
             class="email"
             id="mce-EMAIL"
-            placeholder="email address"
+            placeholder="Email"
             required
           />
           <div class="clear">
             <SubmitButton
               type="submit"
-              value="Subscribe"
               name="subscribe"
               id="mc-embedded-subscribe"
               class="button"
-            />
+            >
+              Join
+            </SubmitButton>
           </div>
         </Wrap>
       </form>
@@ -41,8 +42,24 @@ export default SignUp
 
 const Wrap = styled.div`
   display: flex;
+  height: 30px;
 `
 
-const SubmitButton = styled.input`
+const SubmitButton = styled.button`
   font-family: monserrat, sans-serif;
+  height: 30px;
+  background-color: #c38d9e;
+  color: black;
+  border: 1px black solid;
+
+  :hover {
+    cursor: pointer;
+    background-color: rgb(195, 141, 158, 0.85);
+  }
+`
+const EmailInput = styled.input`
+  margin-right: 5px;
+  font-family: monserrat, sans-serif;
+  border: 1px black solid;
+  padding-left: 5px;
 `

@@ -91,6 +91,4 @@ export const pageQuery = graphql`
   }
 `
 
-const Title = styled.h1`
-  font-family: monserrat, sans-serif;
-`
+const Title = styled.h1``

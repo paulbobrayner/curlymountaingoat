@@ -14,12 +14,11 @@ function Bio() {
           <>
             <Container>
               <BioWrap>
-                <IntroText>Health coach turned software developer.</IntroText>
                 <IntroText>
-                  Building software to help health pros work remotely.
+                  Paul. Health coach turned software developer.
                 </IntroText>
                 <IntroText>
-                  Coaching, behaviour change + client adherance.
+                  Coaching, behaviour change + client adherence.
                 </IntroText>
               </BioWrap>
             </Container>

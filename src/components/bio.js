@@ -24,7 +24,8 @@ function Bio() {
             </Container>
             <SignUpWrap>
               <Subtitle>
-                Stay up to date with progress on the sticky app.
+                I'm buiding an app for coaches to help them be remote + manage
+                client adherence, stay in the loop.
               </Subtitle>
               <SignUp />
             </SignUpWrap>

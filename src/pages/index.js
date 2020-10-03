@@ -15,7 +15,10 @@ class Blog extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO
+          title="Home"
+          keywords={[`blog`, `coach`, `health`, `coaching`, `software`]}
+        />
         <Bio />
         <SearchPosts
           posts={posts}

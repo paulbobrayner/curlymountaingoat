@@ -22,4 +22,4 @@ This was one of the most critically important things for me when used to work as
 
 Particularly in health, I noticed that coaches, trainers etc would have the best fitness or nutrition method for their clients but maybe wouldn't consider if the client would actually stick to their prescription.
 
-This is exactly what I hope for this blog, to provide clarity, insight, structure and also some general conjecture in how to support our clients better.
+This is exactly what I hope for this blog, to provide clarity, insight, structure and also some general conjecture on how to support our clients better.

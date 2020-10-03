@@ -3,10 +3,10 @@ module.exports = {
     // edit below
     title: `Sticky`,
     author: `Paul Rayner`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `A blog to help coaches with client adherence and behaviour change`,
+    siteUrl: `www.stickycoach.co.uk`,
     social: {
-      twitter: `gatsbyjs`,
+      twitter: `paulbobrayner`,
     },
   },
   plugins: [

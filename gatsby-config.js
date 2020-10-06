@@ -4,7 +4,7 @@ module.exports = {
     title: `Sticky`,
     author: `Paul Rayner`,
     description: `A blog to help coaches with client adherence and behaviour change`,
-    siteUrl: `www.stickycoach.co.uk`,
+    siteUrl: `https://stickycoach.co.uk`,
     social: {
       twitter: `paulbobrayner`,
     },

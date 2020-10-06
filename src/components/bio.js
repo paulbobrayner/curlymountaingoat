@@ -78,6 +78,7 @@ const Subtitle = styled.div`
   font-size: 0.875em;
   text-decoration: underline;
   margin-bottom: 10px;
+  max-width: 350px;
 `
 
 export default Bio
